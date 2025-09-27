@@ -8,7 +8,9 @@ export default tseslint.config(
     files: ["**/*.{ts,tsx,js,mjs,cjs}"],
     extends: [js.configs.recommended, ...tseslint.configs.strictTypeChecked],
     languageOptions: {
-      parserOptions: { project: "./tsconfig.json" }
+        parserOptions: {
+        "project": ["tsconfig.eslint.json"],
+      }
     },
     rules: {
       "no-unused-vars": "off",
