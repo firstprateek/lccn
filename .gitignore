@@ -3,3 +3,6 @@ node_modules/
 
 #logs
 test-results
+
+#OS
+.DS_Store
